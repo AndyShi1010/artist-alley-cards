@@ -1,0 +1,26 @@
+[
+    {
+        "path": "jennypark",
+        "name": "Jenny Park",
+        "aliases": ["Asunnydisposish"],
+        "socials": [
+            {"name": "X", "link": "https://svelte.dev/"}
+        ]
+    },
+    {
+        "path": "annielidraws",
+        "name": "Annie Li Draws",
+        "aliases": [],
+        "socials": [
+            {"name": "Instagram", "link": "https://svelte.dev/"}
+        ]
+    },
+    {
+        "path": "sherryspalette",
+        "name": "Sherry's Palette",
+        "aliases": [],
+        "socials": [
+            {"name": "Bluesky", "link": "https://svelte.dev/"}
+        ]
+    }
+]

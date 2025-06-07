@@ -1,5 +1,18 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url';
+import path from 'path';
+// import content from './src/data.json'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const getSlugs = () => {
+	const file = readFileSync(path.join(__dirname, 'src/data.json'), 'utf-8');
+	const fileJSON = JSON.parse(file)
+	const entries = fileJSON.map((i) => "/" + i.path);
+	return entries;
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,6 +31,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		prerender: {
+			entries: ["/", ...getSlugs()]
+		},
 		paths: {
 			base: '/artist-alley-cards',
 		}

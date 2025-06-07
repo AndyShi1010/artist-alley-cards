@@ -32,10 +32,10 @@ const config = {
 			strict: true
 		}),
 		prerender: {
-			entries: ["/", ...getSlugs()]
+			entries: ['/', ...getSlugs()]
 		},
 		paths: {
-			base: '/artist-alley-cards',
+			base: process.env.NODE_ENV === 'production' ? '' : '/artist-alley-cards',
 		}
 	}
 };

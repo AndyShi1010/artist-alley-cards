@@ -20,7 +20,7 @@
         <a href={base + "/" + item.path}>{item.name}</a>
     </div>
 {/each}
-<!-- {#await data}
+<!-- {#await da ta}
     <p>Loading...</p>
 {:then data} 
     

@@ -9,3 +9,7 @@
 </script>
 
 <h1>{data.entry.name}</h1>
+
+<p>{data.entry.aliases}</p>
+
+<p>{data.entry.last_updated}</p>

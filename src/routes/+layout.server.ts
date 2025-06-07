@@ -10,3 +10,5 @@ export const load = (() => {
         }))
     };
 }) satisfies LayoutServerLoad;
+
+export const prerender = true;

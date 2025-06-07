@@ -4,8 +4,6 @@
     import type { LayoutData } from './$types';
     import { base } from '$app/paths';
 
-    export const prerender = true;
-
     let { data, children }: { data: LayoutData, children: Snippet } = $props();
 </script>
 
